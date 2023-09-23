@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>bbs</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body {padding: 20px;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-4">Hello BBS</h1>
+            <div class="mt-4">
+                <p>{{ message }}</p>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">{{ article.content }}</p>
+                        <a href='{% url "bbs:index" %}' class="btn btn-primary">一覧</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS (optional) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
